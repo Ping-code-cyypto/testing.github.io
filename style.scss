@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    #cont{
+        position: absolute;
+        right: -300px;
+        top: -300px;
+        z-index: 0;
+    }
+  
+        #main{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            // background-color: blueviolet;
+                div{
+                    margin-top: 10px;
+                    z-index: 1;
+                }
+                    #hamb{
+                        // background-color: brown;
+                        width: fit-content;
+                        height: fit-content;
+                        display: flex;
+                        flex-direction: column;
+                        // justify-content: center;
+                        align-items: center;
+                        // margin: auto ;
+                        margin-top: 0;
+                        z-index: 1;
+                            .span{
+                                width: 40px;
+                                height: 3px;
+                                // color: black;
+                                background-color: black;
+                                margin: 5px;
+                            }
+                        }
+                }
+
+}
+
+
+@media  screen and (max-width: 500px) {
+    body{
+        width: 100%;
+        overflow-x: hidden;
+            #cont{
+                width: 100px;
+                height: 100px;
+                left: 100px;
+                top: -500px;
+            }
+    }
+}

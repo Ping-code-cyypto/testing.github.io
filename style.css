@@ -1,0 +1,69 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body #cont {
+  position: absolute;
+  right: -300px;
+  top: -300px;
+  z-index: 0;
+}
+
+body #main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #main div {
+  margin-top: 10px;
+  z-index: 1;
+}
+
+body #main #hamb {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  z-index: 1;
+}
+
+body #main #hamb .span {
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  body #cont {
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: -500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
